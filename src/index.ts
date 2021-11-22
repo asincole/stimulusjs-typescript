@@ -8,8 +8,6 @@ declare global {
 	}
 }
 
-declare module Stimulus {}
-
 window.Stimulus = Application.start();
 
 const controllersContext = require.context("./controllers", true, /\.[jt]s$/);
