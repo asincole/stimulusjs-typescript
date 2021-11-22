@@ -2,11 +2,13 @@ import { Application } from "@hotwired/stimulus";
 import { definitionsFromContext } from "@hotwired/stimulus-webpack-helpers";
 import "./style.scss";
 
-// declare global {
-//     interface Window { Stimulus: any; }
-// }
-//
-// declare module Stimulus;
+declare global {
+	interface Window {
+		Stimulus: any;
+	}
+}
+
+declare module Stimulus {}
 
 window.Stimulus = Application.start();
 
