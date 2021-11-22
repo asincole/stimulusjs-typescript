@@ -1,19 +1,26 @@
-<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+		/>
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>{{ htmlWebpackPlugin.options.title }}</title>
-</head>
-<body>
-<h1>hello</h1>
-<div data-controller="cole">
-    <input type="text">
-    <button>Greet</button>
-</div>
-<!--<script src="./src/main.js"></script>-->
-</body>
+		<title>{{htmlWebpackPlugin.options.title}}</title>
+	</head>
+	<body>
+
+		<div data-controller="hello">
+			<input data-hello-target="name" type="text" />
+
+			<button data-action="click->hello#greet">
+				Greet
+			</button>
+
+			<span data-hello-target="output">
+			</span>
+		</div>
+		<!--<script src="./src/main.js"></script>-->
+	</body>
 </html>
